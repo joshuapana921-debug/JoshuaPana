@@ -8,11 +8,11 @@ namespace JoshuaPana
 {
     internal class Program
     {
-        static int cantidad = 0;
+            static int cantidad = 0;
 
         static void Main()
         {
-            int N = 19;
+            int N = 17;
 
             string[] nombres = new string[N];
             string[] cedulas = new string[N];
@@ -112,21 +112,18 @@ namespace JoshuaPana
             if (cantidad >= N)
             {
                 Console.WriteLine("No se pueden agregar mas pacientes.");
-                Console.WriteLine("El maximo es de 19 pacientes.");
+                Console.WriteLine("El maximo es de 17 pacientes.");
                 return;
             }
 
             Console.WriteLine("\n=== AGREGAR PACIENTE ===");
 
-            // Nombre
             Console.Write("Ingrese el nombre: ");
             nombres[cantidad] = Console.ReadLine();
 
-            // Cedula
             Console.Write("Ingrese la cedula: ");
             cedulas[cantidad] = Console.ReadLine();
 
-            // Edad
             Console.Write("Ingrese la edad: ");
             edades[cantidad] = int.Parse(Console.ReadLine());
 
@@ -136,7 +133,6 @@ namespace JoshuaPana
                 edades[cantidad] = int.Parse(Console.ReadLine());
             }
 
-            // Gravedad
             Console.Write("Ingrese la gravedad (1-10): ");
             gravedad[cantidad] = int.Parse(Console.ReadLine());
 
@@ -245,3 +241,6 @@ namespace JoshuaPana
         }
     }
 }
+
+
+
